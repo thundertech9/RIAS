@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-уσ, {FIRST} му иαмє ιѕ ʀɪaຮ
+уσ, {first} му иαмє ιѕ ʀɪaຮ
   ι αм α gяσυρ мαиαgємєит вσт ωнι¢н ¢αи нєℓρ уσυ тσ мαиαgє gяσυρ єαѕу уσυ ¢αи ѕєє му ¢м∂ ιи нєℓρ вυттσи [.](https://telegra.ph/file/a685d6b1824d806485fda.jpg) 
 """
 
@@ -361,7 +361,7 @@ def yone_about_callback(update, context):
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_yone's licensed under the GNU General Public License v3.0_
                  \nHere is the [💾Repository](https://github.com/AnimeKaizoku/SaitamaRobot).
-                 \n\nIf you have any question about ʀɪaຮ, let us know at @RIAS_SUPPORT.""",
+                 \n\nIf you have any question about ʀɪaຮ, let us know at.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
