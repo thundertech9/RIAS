@@ -86,7 +86,7 @@ buttons = [
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="yone_"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/RIAS_R0BOT"
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/RIAS_SUPPORT"
         ),
     ],
     [
