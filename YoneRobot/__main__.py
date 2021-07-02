@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 уσ, {FIRST} му иαмє ιѕ ʀɪaຮ
-  ι αм α gяσυρ мαиαgємєит вσт ωнι¢н ¢αи нєℓρ уσυ тσ мαиαgє gяσυρ єαѕу уσυ ¢αи ѕєє му ¢м∂ ιи нєℓρ вυттσи [.]() 
+  ι αм α gяσυρ мαиαgємєит вσт ωнι¢н ¢αи нєℓρ уσυ тσ мαиαgє gяσυρ єαѕу уσυ ¢αи ѕєє му ¢м∂ ιи нєℓρ вυттσи [.](https://telegra.ph/file/a685d6b1824d806485fda.jpg) 
 """
 
 buttons = [
@@ -360,7 +360,7 @@ def yone_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_yone's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://t.me/RIAS_SUPPORT/3).
+                 \nHere is the [💾Repository](https://github.com/AnimeKaizoku/SaitamaRobot).
                  \n\nIf you have any question about ʀɪaຮ, let us know at @RIAS_SUPPORT.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
