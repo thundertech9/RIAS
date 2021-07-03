@@ -238,7 +238,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>CONNECTING TO DXD</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>❂CONNECTING TO DXD SERVER❂</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
@@ -250,9 +250,9 @@ def info(update: Update, context: CallbackContext):
         text += f"\nLast Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\nUsername: @{html.escape(user.username)}"
+        text += f"\n✯Username: @{html.escape(user.username)}"
 
-    text += f"\nPermalink: {mention_html(user.id, 'link')}"
+    text += f"\n✪Permalink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\nPresence: <code>{}</code>"
@@ -306,7 +306,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/OnePunchUpdates/155">?</a>]'.format(
+        text += ' [<a href="https://t.me/RIAS_UPDATES/2">?</a>]'.format(
             bot.username
         )
 
@@ -335,10 +335,10 @@ def info(update: Update, context: CallbackContext):
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
             _file = bot.get_file(profile["file_id"])
-            _file.download(f"{user.id}.png")
+            _file.download(f"{user.id}.jpg")
 
             message.reply_document(
-                document=open(f"{user.id}.png", "rb"),
+                document=open(f"{user.id}.jpg", "rb"),
                 caption=(text),
                 parse_mode=ParseMode.HTML,
                 disable_web_page_preview=True,
