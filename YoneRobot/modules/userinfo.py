@@ -241,7 +241,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>❂CONNECTING TO DXD SERVER❂</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
+        f"╒═══「✪<b> Appraisal results✪</b> 」\n"
         f"✯ID: <code>{user.id}</code>\n"
         f"✯First Name: {html.escape(user.first_name)}"
     )
@@ -422,7 +422,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>⭕Current DxD⭕:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>Current DxD stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
