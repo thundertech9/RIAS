@@ -96,8 +96,8 @@ buttons = [
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [yone🙋‍♀️](https://telegra.ph/file/082096b101615e33eaf19.jpg) 
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
+`уσ, му иαмє ιѕ  [ʀɪaຮ](https://telegra.ph/file/082096b101615e33eaf19.jpg) 
+`  ι αм α gяσυρ мαиαgємєит вσт ωнι¢н ¢αи нєℓρ уσυ тσ мαиαgє gяσυρ єαѕу уσυ ¢αи ѕєє му ¢м∂ ιи нєℓρ вυттσи .`"""
 
 yone_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
 
@@ -349,7 +349,7 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *yone*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Rias*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -357,8 +357,8 @@ def yone_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_yone's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/noob-kittu/YoneRobot).
-                 \n\nIf you have any question about yone, let us know at .""",
+                 \nHere is the [💾Repository](https://github.com/AnimeKaizoku/SaitamaRobot).
+                 \n\nIf you have any question about Rias, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
