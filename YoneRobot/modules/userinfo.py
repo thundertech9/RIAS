@@ -344,7 +344,7 @@ def info(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
             )
 
-            os.remove(f"{user.id}.png")
+            os.remove(f"{user.id}.jpg")
         # Incase user don't have profile pic, send normal text
         except IndexError:
             message.reply_text(
