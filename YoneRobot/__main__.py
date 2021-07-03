@@ -96,8 +96,8 @@ buttons = [
 
 
 HELP_STRINGS = """
-`уσ, му иαмє ιѕ  [ʀɪaຮ](https://telegra.ph/file/082096b101615e33eaf19.jpg) 
-`  ι αм α gяσυρ мαиαgємєит вσт ωнι¢н ¢αи нєℓρ уσυ тσ мαиαgє gяσυρ єαѕу уσυ ¢αи ѕєє му ¢м∂ ιи нєℓρ вυттσи .`"""
+`уσ [ʀɪaຮ](https://telegra.ph/file/082096b101615e33eaf19.jpg) 
+`   .`"""
 
 yone_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
 
