@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-уσ, му иαмє ιѕ[ʀɪaຮ](https://telegra.ph/file/1d2a3df273ac8abf98fae.jpg), .
-`ι αм α gяσυρ мαиαgємєит вσт ωнι¢н ¢αи нєℓρ уσυ тσ мαиαgє gяσυρ єαѕу уσυ ¢αи ѕєє му ¢м∂ ιи нєℓρ вυттσи   
+Yo, my name is [Rias](https://telegra.ph/file/3db16b9836175836b1058.jpg), I am a group manager bot which can help u to manage group easy.
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ʀɪaຮ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/rias_Robot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ Rias ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/rias_R0bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="yone_"),
@@ -96,15 +96,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-` [ʀɪaຮ](https://telegra.ph/file/781fa4ef28257cd610db4.jpg) 
-`¢σмєѕ ωιтн мαиу ѕρє¢ιαℓ fєαтυяєѕ ιи ιт*
-*¢нє¢к αℓℓ вυттσи вєℓσω тσ єχρℓσяє єνєяу ¢σммαи∂ѕ σf ιяσи мαи*
- *αℓℓ ¢σммαи∂ѕ ¢αи єιтнєя вє υѕє∂ ωιтн* / *or* !...`"""
+`ʜɪ.. ɪ'ᴍ` [Rias](https://telegra.ph/file/6628eab52e5b05c0aa75b.jpg) 
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
 yone_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](#) or by contacting @kittu5588 \
+ You can support the project via [Paypal](#) or by contacting @Itz_samrat \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -351,7 +349,7 @@ def yone_about_callback(update, context):
     query = update.callback_query
     if query.data == "yone_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *ʀɪaຮ*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Rias*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -359,8 +357,8 @@ def yone_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_yone's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/AnimeKaizoku/SaitamaRobot).
-                 \n\nIf you have any question about ʀɪaຮ, let us know at .""",
+                 \nHere is the [💾Repository](https://github.com/noob-kittu/YoneRobot).
+                 \n\nIf you have any question about rias, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
