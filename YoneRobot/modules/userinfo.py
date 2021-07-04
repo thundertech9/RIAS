@@ -335,10 +335,10 @@ def info(update: Update, context: CallbackContext):
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
             _file = bot.get_file(profile["file_id"])
-            _pic.download(f"{user.id}.png")
+            _file.download(f"{user.id}.png")
 
             message.reply_document(
-                Pic=open(f"{user.id}.png", "rb"),
+                document=open(f"{user.id}.png", "rb"),
                 caption=(text),
                 parse_mode=ParseMode.HTML,
                 disable_web_page_preview=True,
@@ -544,7 +544,7 @@ When marked as AFK, any mentions will be replied to with a message to say you're
  ❍ /info*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
+ Come and see [HP System explained](https://t.me/RIAS_UPDATES/8)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
