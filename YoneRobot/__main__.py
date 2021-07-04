@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Yo, my name is [Rias](https://telegra.ph/file/3db16b9836175836b1058.jpg), I am a group manager bot which can help u to manage group easy.
+Yo, my name is [Rias](https://telegra.ph/file/3db16b9836175836b1058.jpg), a group manager bot which can help u to manage group easy.
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help   
 """
 
