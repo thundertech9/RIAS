@@ -105,7 +105,7 @@ async def okgoogle(img):
         return
 
     if photo:
-        dev = await img.reply("`Processing...`")
+        dev = await img.reply("`KESE KESE LOG HAI`")
         try:
             image = Image.open(photo)
         except OSError:
@@ -122,8 +122,8 @@ async def okgoogle(img):
 
         if response != 400:
             await dev.edit(
-                "`Image successfully uploaded to Google. Maybe.`"
-                "\n`Parsing source now. Maybe.`"
+                "`Image WAIFU KA NAAM TAK NI PTA. Maybe.`"
+                "\n`CHALE WAIFU HUNTER BANNE.`"
             )
         else:
             await dev.edit("`Google told me to fuck off.`")
