@@ -17,7 +17,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('OPPAI OPPAI ,Creating logo...wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./YoneRobot/resources/blackbg.jpg')
@@ -36,7 +36,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByrias.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By YoneRobot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By RIAS")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
@@ -57,7 +57,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('ARA ARA PLS CREATING...wait!')
+ await event.reply('ARA ARA, creating logo wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./YoneRobot/resources/blackbg.jpg')
@@ -76,7 +76,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
     fname2 = "LogoByrias.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By YoneRobot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By RIAS")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
@@ -88,7 +88,7 @@ file_helpo = file_help.replace("_", " ")
 
 
 __help__ = """
- ❍ /logo text :  Create your logo with your name
+ ❍ /logo & /wlogo text :  Create your logo with your name
 
  """
 __mod_name__ = "Logo"
