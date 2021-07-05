@@ -80,9 +80,9 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "BOOST! BOOST!\n"
+        "BOOST!!\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
-        "<b>RIAS[.](https://telegra.ph/file/3db16b9836175836b1058.jpg)uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
+        "<b>Rias uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
     )
 
