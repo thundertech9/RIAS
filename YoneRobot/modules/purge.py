@@ -16,7 +16,7 @@ async def purge_messages(event):
     if not await user_is_admin(
         user_id=event.sender_id, message=event
     ) and event.from_id not in [1087968824]:
-        await event.reply("Only Admins are allowed to use this command")
+        await event.reply(" ARA, only Admins can use this command")
         return
 
     if not await can_delete_messages(message=event):
@@ -43,7 +43,7 @@ async def purge_messages(event):
     except:
         pass
     time_ = time.perf_counter() - start
-    text = f"Purged Successfully in {time_:0.2f} Second(s)"
+    text = f"Deleted msg Successfully in {time_:0.2f} Second(s)"
     await event.respond(text, parse_mode="markdown")
 
 
@@ -54,7 +54,7 @@ async def delete_messages(event):
     if not await user_is_admin(
         user_id=event.sender_id, message=event
     ) and event.from_id not in [1087968824]:
-        await event.reply("Only Admins are allowed to use this command")
+        await event.reply("Ara, only Admins can use this command")
         return
 
     if not await can_delete_messages(message=event):
@@ -63,7 +63,7 @@ async def delete_messages(event):
 
     message = await event.get_reply_message()
     if not message:
-        await event.reply("Whadya want to delete?")
+        await event.reply("uff Whadya want to delete?")
         return
     chat = await event.get_input_chat()
     del_message = [message, event.message]
