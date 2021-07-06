@@ -101,6 +101,8 @@ HELP_STRINGS = """
 
 yone_IMG = "https://telegra.ph/file/7e61fe06a9c02747249c4.jpg"
 
+Yone_VID = "https://telegra.ph/file/8772b8e3604cca1cc1e27.mp4"
+
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @Itz_samrat \
  Supporting isnt always financial! \
