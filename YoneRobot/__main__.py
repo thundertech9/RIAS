@@ -433,7 +433,7 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+            "Click on button to see my commands.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -682,7 +682,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "https://telegra.ph/file/43e5e7c97b27d362954f8.mp4")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm alived🤦")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
