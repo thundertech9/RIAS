@@ -7,7 +7,7 @@ CLICK ON BELOW IMAGE TO GET ME ON TG👇
 
 [![Support-chat](https://telegra.ph/file/3db57300307f77d033bca.jpg)](https://t.me/RIAS_SUPPORT)
 
-p align="center">
+
 <a href="https://github.com/thundertech9/RIAS" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/thundertech9/RIAS?style=flat&logo=github&color=success" /> </a>
 <a href="https://github.com/thundertech9/RIAS/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/thundertech9/Rias?label=Forks&logo=github" /> </a>
 <a href="https://github.com/thundertech9/RIAD" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/thundertech9/RIAS?color=success" /> </a>
