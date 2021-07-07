@@ -1,6 +1,6 @@
 
 
-# [
+# 
 ![RIAS](https://telegra.ph/file/7dfbddcff084731decba1.jpg)
 Me On Telegram [Rias](https://t.me/RIAS_R0BOT)
 
