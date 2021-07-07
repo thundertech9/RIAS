@@ -2,7 +2,7 @@
 
 CLICK ON BELOW IMAGE TO GET ME ON TG👇
 
-[![DEPLOY](https://telegra.ph/file/442e6c6a5c3b037da14f5.jpg)](https://t.me/RIAS_R0BOT)
+[![DEPLOY](https://telegra.ph/file/77c3485c02b596760a21c.png)](https://t.me/RIAS_R0BOT)
 
  <p align="center">
 <a href="https://github.com/thundertech9/RIAS" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/thundertech9/RIAS?style=flat&logo=github&color=success" /> </a>
