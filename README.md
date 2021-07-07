@@ -15,7 +15,7 @@
 </p>
 
 # YoneRobot
-Me On Telegram [✨Yone✨](https://t.me/YoneRobot)
+Me On Telegram [Rias](https://t.me/RIAS_R0BOT)
 
 ## How To Host
 The easiest way to deploy this Bot
@@ -24,10 +24,10 @@ The easiest way to deploy this Bot
 CREDITS
 ```
 ❤️ MashaRobot = Dark Prince 
-❤️ DaisyX = Inuka
+❤️ DaisyX
 ❤️ TheHamkerCat = WBB
 
-This Bot Is Created By @A_Viyu ! if your kanging this without fork at least give a credit to get a smile of my hard work.
+if your kanging this without fork at least give a credit to get a smile of my hard work.
 
 
 
