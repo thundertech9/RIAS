@@ -1,5 +1,5 @@
 
-This is a phython based bot which can help u to manage group for help go to bot @RIAS_R0BOT then hit /help or come in my support chat for any kind of help.
+This is a phython based bot which can help u to manage group for help go to bot [@RIAS_R0BOT] then hit /help or come in my support chat for any kind of help.
 
 
 CLICK ON BELOW IMAGE TO GET ME ON TG👇
