@@ -1,4 +1,6 @@
 
+[This is a phython based bot which can help u to manage group for help go to bot then hit /help or come in my support chat for any kind of help.](http://t.me/RIASR0BOT)
+
 
 CLICK ON BELOW IMAGE TO GET ME ON TG👇
 
@@ -14,8 +16,6 @@ CLICK ON BELOW IMAGE TO GET ME ON TG👇
 <a href="https://github.com/thundertech9/RIAS" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/ryomen-sukuna/kai" /> </a>
 <a href="https://github.com/thundertech9/RIAS/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/thundertech9/RIAS?style=flat&logo=github" /> </a>
 <a href="https://github.com/thundertech9/RIAS" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/thundertech9//RIAS?style=flat&logo=github&color=yellow" /> </
-
-[This is a phython based bot which can help u to manage group for help go to bot then hit /help or come in my support chat for any kind of help.](http://t.me/RIASR0BOT)
 
 [![DEV-✪Samrat✪](https://telegra.ph/file/6cead1ec408d77f0ad55f.jpg)](http://t.me/itz_samrat)
 
