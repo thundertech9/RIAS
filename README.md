@@ -12,7 +12,7 @@ CLICK ON BELOW IMAGE TO GET ME ON TG👇
 <a href="https://github.com/thundertech9/RIAS/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/thundertech9/RIAS?style=flat&logo=github" /> </a>
 <a href="https://github.com/thundertech9/RIAS" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/thundertech9//RIAS?style=flat&logo=github&color=yellow" /> </a>
 
-[Support-chat](https://t.me/RIAS_SUPPORT)
+[![Support-chat](https://telegra.ph/file/3db57300307f77d033bca.jpg)](https://t.me/RIAS_SUPPORT)
 
 
 
