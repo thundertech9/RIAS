@@ -17,7 +17,7 @@ CLICK ON BELOW IMAGE TO GET ME ON TG👇
 
 [This is a phython based bot which can help u to manage group for help go to bot then hit /help or come in my support chat for any kind of help.](http://t.me/RIASR0BOT)
 
-
+[DEV-✪Samrat✪](http://t.me/itz_samrat)
 
 CREDITS
 ```
