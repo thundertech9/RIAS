@@ -5,12 +5,12 @@ CLICK ON BELOW IMAGE TO GET ME ON TG👇
 [![DEPLOY](https://telegra.ph/file/442e6c6a5c3b037da14f5.jpg)](https://t.me/RIAS_R0BOT)
 
  <p align="center">
-<a href="https://github.com/thundertech9/Rias" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/thundertech9/Rias?style=flat&logo=github&color=success" /> </a>
-<a href="https://github.com/thundertech9/Rias/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/thundertech9/Rias?label=Forks&logo=github" /> </a>
-<a href="https://github.com/thundertech9/Rias" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/ryomen-sukuna/kai?color=success" /> </a>
-<a href="https://github.com/thundertech9/Rias" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/ryomen-sukuna/kai" /> </a>
-<a href="https://github.com/thundertech9/Rias/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/ryomen-sukuna/kai?style=flat&logo=github" /> </a>
-<a href="https://github.com/thundertech9/Rias" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/ryomen-sukuna/kai?style=flat&logo=github&color=yellow" /> </a>
+<a href="https://github.com/thundertech9/RIAS" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/thundertech9/RIAS?style=flat&logo=github&color=success" /> </a>
+<a href="https://github.com/thundertech9/RIAS/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/thundertech9/Rias?label=Forks&logo=github" /> </a>
+<a href="https://github.com/thundertech9/RIAD" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/thundertech9/RIAS?color=success" /> </a>
+<a href="https://github.com/thundertech9/RIAS" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/ryomen-sukuna/kai" /> </a>
+<a href="https://github.com/thundertech9/RIAS/graphs/contributors" alt="GitHub contributors"> <img src="https://img.shields.io/github/contributors/thundertech9/RIAS?style=flat&logo=github" /> </a>
+<a href="https://github.com/thundertech9/RIAS" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/thundertech9//RIAS?style=flat&logo=github&color=yellow" /> </a>
 
 CREDITS
 ```
