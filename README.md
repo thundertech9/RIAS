@@ -1,8 +1,5 @@
 
 
-# 
-![RIAS](https://telegra.ph/file/7dfbddcff084731decba1.jpg)
-
 CLICK ON BELOW IMAGE TO GET ME ON TG👇
 
 [![DEPLOY](https://telegra.ph/file/442e6c6a5c3b037da14f5.jpg)](https://t.me/RIAS_R0BOT)
