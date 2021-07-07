@@ -2,7 +2,7 @@
 
 # 
 ![RIAS](https://telegra.ph/file/7dfbddcff084731decba1.jpg)
-Click the image to get me on tg [![Rias](https://telegra.ph/file/442e6c6a5c3b037da14f5.jpg)(https://t.me/RIAS_R0BOT)]
+Click the image to get me on tg [Rias](https://telegra.ph/file/442e6c6a5c3b037da14f5.jpg)(https://t.me/RIAS_R0BOT)
 
  <p align="center">
 <a href="https://github.com/thundertech9/Rias" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/thundertech9/Rias?style=flat&logo=github&color=success" /> </a>
