@@ -24,7 +24,7 @@ from YuiGBot import (
     dispatcher,
     sw,
 )
-from YuiGBot.__main__ import STATS, TOKEN, USER_INFO
+from Rias.__main__ import STATS, TOKEN, USER_INFO
 import YuiGBot.modules.sql.userinfo_sql as sql
 from YuiGBot.modules.disable import DisableAbleCommandHandler
 from YuiGBot.modules.sql.global_bans_sql import is_user_gbanned
