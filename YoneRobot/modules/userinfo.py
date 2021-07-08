@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from moudules import (
+from YoneRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from moudules import (
     dispatcher,
     sw,
 )
-from yoneRobot.__main__ import STATS, TOKEN, USER_INFO
-import YuiGBot.modules.sql.userinfo_sql as sql
-from YuiGBot.modules.disable import DisableAbleCommandHandler
-from YuiGBot.modules.sql.global_bans_sql import is_user_gbanned
-from YuiGBot.modules.sql.afk_sql import is_afk, check_afk_status
-from YuiGBot.modules.sql.users_sql import get_user_num_chats
-from YuiGBot.modules.helper_funcs.chat_status import sudo_plus
-from YuiGBot.modules.helper_funcs.extraction import extract_user
-from YuiGBot import telethn as YuiTelethonClient, TIGERS, DRAGONS, DEMONS
+from YoneRobot.__main__ import STATS, TOKEN, USER_INFO
+import YoneRobot.modules.sql.userinfo_sql as sql
+from YoneRobot.modules.disable import DisableAbleCommandHandler
+from YoneRobot.modules.sql.global_bans_sql import is_user_gbanned
+from YoneRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from YoneRobot.modules.sql.users_sql import get_user_num_chats
+from YoneRobot.modules.helper_funcs.chat_status import sudo_plus
+from YoneRobot.modules.helper_funcs.extraction import extract_user
+from YoneRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -151,16 +151,16 @@ def get_id(update: Update, context: CallbackContext):
 
         if chat.type == "private":
             msg.reply_text(
-                f"➦ ••• Your iD ••• \n➥ <code>{chat.id}</code>", parse_mode=ParseMode.HTML
+                f"Your id is <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
             )
 
         else:
             msg.reply_text(
-                f"➦ •••• Group ID •••• \n➥ <code>{chat.id}</code> ", parse_mode=ParseMode.HTML
+                f"This group's id is <code>{chat.id}</code>.", parse_mode=ParseMode.HTML
             )
 
 
-@YuiTelethonClient.on(
+@YoneTelethonClient.on(
     events.NewMessage(
         pattern="/ginfo ", from_users=(TIGERS or []) + (DRAGONS or []) + (DEMONS or [])
     )
@@ -238,24 +238,24 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code> °°° Ｓｃａｎ Ｕｓｅｒ °°° </code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>❂CONNECTING TO DXD SERVER❂ </code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"<b>┎━─━─「ᴜsᴇʀ ɪɴғᴏ」</b>\n"
-        f"✥ UID: <code>{user.id}</code>\n"
-        f"✥ F Name: {html.escape(user.first_name)}"
+        f"╒═══「✪<b> Appraisal results✪</b> 」\n"
+        f"✯ID: <code>{user.id}</code>\n"
+        f"✯First Name: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n✥ L Name: {html.escape(user.last_name)}"
+        text += f"\nLast Name: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n✥ Username: @{html.escape(user.username)}"
+        text += f"\n✯Username: @{html.escape(user.username)}"
 
-    text += f"\n✥ Profile Link: {mention_html(user.id, 'link')}"
+    text += f"\n✯Permalink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\n✥ Existence: <code>{}</code>"
+        _stext = "\nPresence: <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -264,14 +264,14 @@ def info(update: Update, context: CallbackContext):
             status = status = bot.get_chat_member(chat.id, user.id).status
             if status:
                 if status in {"left", "kicked"}:
-                    text += _stext.format("Not Here")
+                    text += _stext.format("Not here")
                 elif status == "member":
-                    text += _stext.format("Yes Here")
+                    text += _stext.format("Detected")
                 elif status in {"administrator", "creator"}:
                     text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>USER POWER:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
@@ -287,26 +287,26 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n✥ ᒪEGEᑎᗪ oF "
+        text += "\n\nThe Disaster level of this person is 'GREAT-RED'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n✥ DEvⷪ USER oF "
+        text += "\n\nThis user is member of 'DxD HERO'S'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n✥ 🐉ɾαցօղ USER oF "
+        text += "\n\nThe Disaster level of this person is 'Dragon'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n✥ Dem👿n USER oF "
+        text += "\n\nThe Disaster level of this person is 'Demon'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\n✥ TiGER USER oF "
+        text += "\n\nThe Disaster level of this person is 'Tiger'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\n✥ SAFE USER oF "
+        text += "\n\nThe Disaster level of this person is 'Wolf'."
         disaster_level_present = True
 
     if disaster_level_present:
-        text += '「<a href="https://t.me/tGOD_Support"> ｔ-𝙶𝙾𝙳 </a>」'.format(
+        text += ' [<a href="https://t.me/RIAS_UPDATES/2">?</a>]'.format(
             bot.username
         )
 
@@ -335,10 +335,10 @@ def info(update: Update, context: CallbackContext):
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
             _file = bot.get_file(profile["file_id"])
-            _file.download(f"{user.id}.jpg")
+            _file.download(f"{user.id}.png")
 
-            message.reply_photo(
-                photo=open(f"{user.id}.jpg", "rb"),
+            message.reply_document(
+                document=open(f"{user.id}.png", "rb"),
                 caption=(text),
                 parse_mode=ParseMode.HTML,
                 disable_web_page_preview=True,
@@ -422,7 +422,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╭YUi ALL STATS:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>Current DxD:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
@@ -517,30 +517,34 @@ def __user_info__(user_id):
 
 
 __help__ = """
+*Away from group*
+ ❍ /afk <reason>*:* mark yourself as AFK(away from keyboard).
+ ❍ brb <reason>*:* same as the afk command - but not a command.
+When marked as AFK, any mentions will be replied to with a message to say you're not available!
+
 *ID:*
- • /id get the current group id. If used by replying to a message, gets that user's id.
- 
- • /gifid reply to a gif to me to tell you its file ID.
+ ❍ /id*:* get the current group id. If used by replying to a message, gets that user's id.
+ ❍ /gifid*:* reply to a gif to me to tell you its file ID.
 
 *Self addded information:* 
- • `/setme <text>`*:* will set your info
- • `/me`*:* will get your or another user's info.
-Examples:
- `/setme I am a wolf.`
- `/me @username(defaults to yours if no user specified)`
+ ❍ /setme <text>*:* will set your info
+ ❍ /me*:* will get your or another user's info.
+*Examples:* 💡
+ ➩ /setme I am a wolf.
+ ➩ /me @username(defaults to yours if no user specified)
 
 *Information others add on you:* 
- • `/bio`*:* will get your or another user's bio. This cannot be set by yourself.
-• `/setbio <text>`*:* while replying, will save another user's bio 
-Examples:
- `/bio @username(defaults to yours if not specified).`
- `/setbio This user is a wolf` (reply to the user)
+ ❍ /bio*:* will get your or another user's bio. This cannot be set by yourself.
+ ❍ /setbio <text>*:* while replying, will save another user's bio 
+*Examples:* 💡
+ ➩ /bio @username(defaults to yours if not specified).`
+ ➩ /setbio This user is a wolf` (reply to the user)
 
 *Overall Information about you:*
- • `/info`*:* get information about a user. 
+ ❍ /info*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
+ Come and see [HP System explained](https://t.me/RIAS_UPDATES/8)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
@@ -563,7 +567,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Info"
+__mod_name__ = "Infos"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
@@ -575,10 +579,3 @@ __handlers__ = [
     GET_ABOUT_HANDLER,
     STATS_HANDLER,
 ]
-
-
-
-
-
-
-# I0BOZXRfU0hFTEwgUHJvamVjdCAjQFlVaV9HQm90IChCWSAtIEBHQm90X05ldHdvcmsp
